@@ -1,0 +1,137 @@
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-montserrat: "Montserrat", sans-serif;
+$font-inter: "Inter", sans-serif;
+
+$color-orange: #F0831C;
+$color-green: #7CB518;
+$color-black: #34373A;
+$color-grey: #B0B0B0;
+$color-light-grey: #E3E1E1;
+$color-bg-grey: #F5F5F5;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+span, label {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input, textarea {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    outline: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+ul, ol, dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-weight: 600;
+    color: $color-black;
+    font-family: $font-montserrat;
+}
+
+.main_container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    @include media(1340) {
+        max-width: calc(100% - 40px);
+    }
+}
+
+.btn {
+    &_orange {
+        background: $color-orange;
+        color: #fff;
+        padding: 0 20px;
+        border-radius: 50px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+    }
+}
+
+// Header
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+
+    &__right {
+        gap: 88px;
+    }
+
+    &__nav {
+        gap: 30px;
+        
+        a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+// Header end
