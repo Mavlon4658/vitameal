@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
     <title>VITAMEAL</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS file -->
@@ -20,6 +22,7 @@
             <div class="main_container d-flex align-items-center justify-content-between">
                 <a href="/" class="header__logo">
                     <img src="./images/logo.svg" alt="">
+                    <span>VITAMEAL</span>
                 </a>
                 <div class="d-flex align-items-center header__right">
                     <ul class="d-flex align-items-center header__nav">
@@ -47,11 +50,230 @@
             <!-- Home -->
             <section class="home">
                 <img src="./images/home-bg.png" alt="" class="home__bg">
-                <div class="main_container">
-
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main_container">
+                                <div class="home__card">
+                                    <h4>Доставка правильного питания</h4>
+                                    <h3>калининград</h3>
+                                    <div class="d-flex align-items-center justify-content-center btns">
+                                        <a href="#" class="btn_orange">Подобрать меню</a>
+                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                    </div>
+                                </div>
+                                <img src="./images/home-card-1.png" alt="" class="home__card_bg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_container">
+                                <div class="home__card">
+                                    <h4>Сбалансированные <br> рационы питания</h4>
+                                    <h3 class="text-orange">от 699₽</h3>
+                                    <div class="d-flex align-items-center justify-content-center btns">
+                                        <a href="#" class="btn_orange">Подобрать меню</a>
+                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                    </div>
+                                </div>
+                                <img src="./images/home-card-2.png" alt="" class="home__card_bg card-2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_container">
+                                <div class="home__card">
+                                    <h4>Питайся  вкусно и правильно с </h4>
+                                    <h3>VITAMEAL</h3>
+                                    <div class="d-flex align-items-center justify-content-center btns">
+                                        <a href="#" class="btn_orange">Подобрать меню</a>
+                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                    </div>
+                                </div>
+                                <img src="./images/home-card-3.png" alt="" class="home__card_bg card-3">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main_container">
+                                <div class="home__card">
+                                    <h4>подари своему <br> организму лучшее</h4>
+                                    <h3 class="text-orange">новое меню</h3>
+                                    <div class="d-flex align-items-center justify-content-center btns">
+                                        <a href="#" class="btn_orange">Подобрать меню</a>
+                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                    </div>
+                                </div>
+                                <img src="./images/home-card-4.png" alt="" class="home__card_bg card-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_container swp_pagination__wrap">
+                    <div class="swp_pagination"></div>
                 </div>
             </section>
             <!-- Home end -->
+
+            <!-- Work -->
+            <section class="work">
+                <div class="main_container">
+                    <h2 class="main_title">
+                        Как это <span>работает?</span>
+                    </h2>
+                    <ul class="d-flex align-items-start work__list">
+                        <li>
+                            <img src="./images/work-card-1.png" alt="">
+                            <h3>Выбор тарифа</h3>
+                            <p>Вы выбираете тариф под ваши задачи с учетом всех необходимых параметров</p>
+                        </li>
+                        <li>
+                            <img src="./images/work-card-2.png" alt="">
+                            <h3>Доставка</h3>
+                            <p>Мы бесплатно доставляем еду в любую точку города</p>
+                        </li>
+                        <li>
+                            <img src="./images/work-card-3.png" alt="">
+                            <h3>питание</h3>
+                            <p>Вы питаетесь правильно, вкусно и разнообразно</p>
+                        </li>
+                        <li>
+                            <img src="./images/work-card-4.png" alt="">
+                            <h3>экономия</h3>
+                            <p>Вы экономите 24 часа в неделю</p>
+                        </li>
+                        <li>
+                            <img src="./images/work-card-5.png" alt="">
+                            <h3>Результат</h3>
+                            <p>2 недели питания и вы получаете результат</p>
+                        </li>
+                    </ul>
+                    <div class="work__video">
+                        <img src="./images/work-card.png" alt="" class="main-img">
+                        <button>
+                            <img src="./images/play.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Work end -->
+
+            <!-- Program -->
+            <section class="program">
+                <div class="main_container">
+                    <h2 class="main_title">выберите <span>программу</span> питания</h2>
+                    <div class="d-flex align-items-start justify-content-between program__content">
+                        <div class="program__left">
+                            <ul class="d-flex flex-wrap program__kkal">
+                                <li>
+                                    <input type="radio" name="kkal" id="kkal11">
+                                    <label for="kkal11">
+                                        <h4>ОФИС</h4>
+                                        <p>~ ккал</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="kkal" id="kkal12">
+                                    <label for="kkal12">
+                                        <h4>ПОХУДЕНИЕ</h4>
+                                        <p>1000 - 1200 ккал</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" checked name="kkal" id="kkal13">
+                                    <label for="kkal13">
+                                        <h4>Поддержание</h4>
+                                        <p>1500 - 1800 ккал</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="kkal" id="kkal14">
+                                    <label for="kkal14">
+                                        <h4>набор массы</h4>
+                                        <p>2200 - 2500 ккал</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="kkal" id="kkal15">
+                                    <label for="kkal15">
+                                        <h4>Пробный день</h4>
+                                        <p>~ ккал</p>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="d-flex align-items-center program__week">
+                                <li>
+                                    <input type="radio" checked name="week" id="week11">
+                                    <label for="week11">ПН</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week12">
+                                    <label for="week12">ВТ</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week13">
+                                    <label for="week13">ср</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week14">
+                                    <label for="week14">чт</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week15">
+                                    <label for="week15">пт</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week16">
+                                    <label for="week16">сб</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="week" id="week17">
+                                    <label for="week17">вс</label>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center justify-content-between text">
+                                <h3>4 блюда, 4 приема пищи</h3>
+                                <p>Ккал 1750, б-60, ж-70, у-128</p>
+                            </div>
+                            <ul class="d-flex align-items-stretch flex-wrap program__cards">
+                                <li class="program__cards_item">
+                                    <div class="program__cards_item__head">
+                                        <img src="./images/program-card-1.png" alt="">
+                                        <h4>Завтрак</h4>
+                                        <p>Каша овсянная на молоке с изюмом, лепестками миндаля и муссом из черной смородины</p>
+                                    </div>
+                                    <h5>Ккал 250, б-20, ж-40, у-128</h5>
+                                </li>
+                                <li class="program__cards_item">
+                                    <div class="program__cards_item__head">
+                                        <img src="./images/program-card-2.png" alt="">
+                                        <h4>Обед</h4>
+                                        <p>Картофель по деревенски, колбаски куринные в соусе карри</p>
+                                    </div>
+                                    <h5>Ккал 450, б-20, ж-60, у-150</h5>
+                                </li>
+                                <li class="program__cards_item">
+                                    <div class="program__cards_item__head">
+                                        <img src="./images/program-card-3.png" alt="">
+                                        <h4>Полдник</h4>
+                                        <p>Овощной салат из помидоров, оругцов, брокколли, кабачков и моркови под соусом песто</p>
+                                    </div>
+                                    <h5>Ккал 150, б-10, ж-10, у-70</h5>
+                                </li>
+                                <li class="program__cards_item">
+                                    <div class="program__cards_item__head">
+                                        <img src="./images/program-card-4.png" alt="">
+                                        <h4>УЖИН</h4>
+                                        <p>Лапша из твердых сортов пшеницы с подливкой из курицы в сметанном соусе</p>
+                                    </div>
+                                    <h5>Ккал 250, б-20, ж-40, у-128</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="program__right">
+                            <button class="btn_orange">рассчитать свой калораж</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Program end -->
 
         </main>
         
@@ -61,6 +283,8 @@
         
     </div>
     
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- JS file -->
