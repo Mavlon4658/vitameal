@@ -93,7 +93,7 @@ body {
     &_container {
         max-width: 1300px;
         margin: 0 auto;
-    
+
         @include media(1340) {
             max-width: calc(100% - 40px);
         }
@@ -174,7 +174,7 @@ body {
 
     &__nav {
         gap: 30px;
-        
+
         a {
             font-size: 16px;
             font-weight: 500;
@@ -221,7 +221,7 @@ body {
     &__card {
         max-width: 767px;
         margin-left: auto;
-        
+
         h4 {
             margin: 269px 0 40px;
             font-size: 40px;
@@ -319,7 +319,7 @@ body {
                         width: 100%;
                     }
                 }
-                
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -596,3 +596,113 @@ body {
     }
 }
 // Program end
+
+// footer
+.footer {
+    margin-top: 150px;
+
+    @include media(993) {
+        margin-top: 80px;
+    }
+
+    &_in {
+        padding: 60px 100px 100px 100px;
+        background-image: url('../images/footer_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 40px;
+        gap: 40px 0;
+
+        @include media(993) {
+            padding: 40px 0;
+            border-radius: 20px;
+        }
+    }
+
+    &_one {
+        @include media(993) {
+            order: 2;
+        }
+    }
+
+    &_two {
+        @include media(993) {
+            order: 3;
+        }
+    }
+
+    &_three {
+        @include media(993) {
+            order: 1;
+        }
+    }
+
+    &_start {
+        gap: 30px;
+
+        @include media(993) {
+            gap: 10px;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24.38px;
+            color: #ffffff;
+
+            img {
+                @include media(993) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            @include media(993) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    &_center {
+        gap: 40px;
+
+        @include media(993) {
+            gap: 30px;
+        }
+
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22.4px;
+            color: #ffffff;
+
+            @include media(993) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &_end {
+        display: flex;
+        justify-content: end;
+
+        @include media(993) {
+            justify-content: center;
+        }
+
+        a {
+            @include media(993) {
+                width: 66px;
+                height: 44px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+// footer
