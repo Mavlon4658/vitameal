@@ -269,12 +269,525 @@
                         </div>
                         <div class="program__right">
                             <button class="btn_orange">рассчитать свой калораж</button>
+                            <div class="program__form">
+                                <h3 class="title">Каллорийность, ккал:</h3>
+                                <ul class="d-flex flex-wrap form_kkal">
+                                    <li class="form_radio">
+                                        <input type="radio" name="kkal2" id="kkal21">
+                                        <label for="kkal21">Без ккал</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="kkal2" id="kkal22">
+                                        <label for="kkal22">1000</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="kkal2" id="kkal23">
+                                        <label for="kkal23">1500</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" checked name="kkal2" id="kkal24">
+                                        <label for="kkal24">2200</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="kkal2" id="kkal25">
+                                        <label for="kkal25">0</label>
+                                    </li>
+                                </ul>
+                                <h3 class="title">Длительность, дней:</h3>
+                                <ul class="d-flex flex-wrap form_day">
+                                    <li class="form_radio">
+                                        <input type="radio" name="day" id="day11">
+                                        <label for="day11">1</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="day" id="day12">
+                                        <label for="day12">6</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="day" id="day13">
+                                        <label for="day13">14</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" checked name="day" id="day14">
+                                        <label for="day14">20</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="day" id="day15">
+                                        <label for="day15">30</label>
+                                    </li>
+                                </ul>
+                                <h3 class="title">Формат питания:</h3>
+                                <ul class="d-flex align-items-center flex-wrap form_power">
+                                    <li class="form_radio">
+                                        <input type="radio" checked name="power" id="power11">
+                                        <label for="power11">Будни</label>
+                                    </li>
+                                    <li class="form_radio">
+                                        <input type="radio" name="power" id="power12">
+                                        <label for="power12">Всю неделю</label>
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center justify-content-between form_checkbox">
+                                    <div>
+                                        <h4>Заменить аллергены</h4>
+                                        <p>(перец, чеснок, орехи и т.д.)</p>
+                                    </div>
+                                    <label for="formCheck1" class="main_checkbox">
+                                        <input type="checkbox" checked name="" id="formCheck1">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="form_alert">Молочные продукты, цитрусовые</div>
+                                <div class="form_line"></div>
+                                <h3 class="title text-green">Тариф «Поддержание»</h3>
+                                <ul class="d-flex flex-column form_datas">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <p>96 блюд, 20 дней</p>
+                                        <span></span>
+                                        <p>430 руб/ день</p>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <p>Скидка</p>
+                                        <span></span>
+                                        <p class="text-red">-8124 руб</p>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <p>Доставка</p>
+                                        <span></span>
+                                        <p>0 руб</p>
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center justify-content-between form_result">
+                                    <p>ИТОГО:</p>
+                                    <p class="d-flex align-items-center">
+                                        10 320 руб
+                                        <span>18444 руб</span>
+                                    </p>
+                                </div>
+                                <button class="btn_green">заказать</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Program end -->
+          
+            <!-- Resultat -->
+            <section class="resultat">
+                <div class="main_container">
+                    <h2 class="main_title"><span>результаты</span> наших клиентов</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="resultat__card">
+                                    <div class="resultat__card_img">
+                                        <img src="./images/resultat-card-1.png" alt="">
+                                    </div>
+                                    <div class="resultat__card_content">
+                                        <div class="d-flex align-items-center justify-content-between resultat__card_content__head">
+                                            <h3>Ангелина, 34 года</h3>
+                                            <p>-10 кг</p>
+                                        </div>
+                                        <ul class="d-flex flex-column resultat__card_content__term">
+                                            <li>2 месяца</li>
+                                            <li>Программа «Похудение»</li>
+                                        </ul>
+                                        <ul class="d-flex flex-column resultat__card_content__text">
+                                            <li>«Хочу поделиться своим опытом похудения с помощью программы питания VitaMeal. Я выбрала программу с учётом своей цели — снизить вес и поддерживать форму. Меню было разнообразным, учитывало мои предпочтения и потребности.</li>
+                                            <li>Первые результаты стали заметны уже через неделю: я почувствовала лёгкость, улучшилось настроение. За два месяца я потеряла 10 килограмм, и это меня очень радует. Я продолжаю следовать рекомендациям программы и надеюсь достичь ещё лучших результатов».</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="resultat__card">
+                                    <div class="resultat__card_img">
+                                        <img src="./images/resultat-card-1.png" alt="">
+                                    </div>
+                                    <div class="resultat__card_content">
+                                        <div class="d-flex align-items-center justify-content-between resultat__card_content__head">
+                                            <h3>Ангелина, 34 года</h3>
+                                            <p>-10 кг</p>
+                                        </div>
+                                        <ul class="d-flex flex-column resultat__card_content__term">
+                                            <li>2 месяца</li>
+                                            <li>Программа «Похудение»</li>
+                                        </ul>
+                                        <ul class="d-flex flex-column resultat__card_content__text">
+                                            <li>«Хочу поделиться своим опытом похудения с помощью программы питания VitaMeal. Я выбрала программу с учётом своей цели — снизить вес и поддерживать форму. Меню было разнообразным, учитывало мои предпочтения и потребности.</li>
+                                            <li>Первые результаты стали заметны уже через неделю: я почувствовала лёгкость, улучшилось настроение. За два месяца я потеряла 10 килограмм, и это меня очень радует. Я продолжаю следовать рекомендациям программы и надеюсь достичь ещё лучших результатов».</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="resultat__card">
+                                    <div class="resultat__card_img">
+                                        <img src="./images/resultat-card-1.png" alt="">
+                                    </div>
+                                    <div class="resultat__card_content">
+                                        <div class="d-flex align-items-center justify-content-between resultat__card_content__head">
+                                            <h3>Ангелина, 34 года</h3>
+                                            <p>-10 кг</p>
+                                        </div>
+                                        <ul class="d-flex flex-column resultat__card_content__term">
+                                            <li>2 месяца</li>
+                                            <li>Программа «Похудение»</li>
+                                        </ul>
+                                        <ul class="d-flex flex-column resultat__card_content__text">
+                                            <li>«Хочу поделиться своим опытом похудения с помощью программы питания VitaMeal. Я выбрала программу с учётом своей цели — снизить вес и поддерживать форму. Меню было разнообразным, учитывало мои предпочтения и потребности.</li>
+                                            <li>Первые результаты стали заметны уже через неделю: я почувствовала лёгкость, улучшилось настроение. За два месяца я потеряла 10 килограмм, и это меня очень радует. Я продолжаю следовать рекомендациям программы и надеюсь достичь ещё лучших результатов».</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center swp_btn">
+                        <button class="swp_btn__prev">
+                            <img src="./images/arrow-left.svg" alt="">
+                        </button>
+                        <button class="swp_btn__next">
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Resultat end -->
 
+            <!-- Nutrition -->
+            <section class="nutrition">
+                <div class="d-flex flex-column align-items-center justify-content-center main_container nutrition__content">
+                    <div class="d-flex flex-column align-items-center justify-content-center nutrition__content_text">
+                        <h3>Пробный день <br> правильного питания</h3>
+                        <h2>ВСЕГО ЗА 699₽!</h2>
+                        <a href="#">заказать</a>
+                    </div>
+                    <img src="./images/nutrition-card-1.png" alt="" class="card-1">
+                    <img src="./images/nutrition-card-2.png" alt="" class="card-2">
+                </div>
+            </section>
+            <!-- Nutrition end -->
+
+            <!-- Choose us -->
+            <section class="choose-us">
+                <div class="main_container">
+                    <img src="./images/choose-us-bg-2.png" alt="" class="bg-2">
+                    <img src="./images/choose-us-bg-3.png" alt="" class="bg-3">
+                    <img src="./images/choose-us-bg-1.png" alt="" class="bg-1">
+                    <h2 class="main_title"><span>Почему</span> нас выбирают?</h2>
+                    <ul class="d-flex flex-wrap align-items-stretch choose-us__card">
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-1.svg" alt="">
+                            <p>Правильный калораж и сочетание БЖУ</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-2.svg" alt="">
+                            <p>Наш 6-ти летний опыт</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-3.svg" alt="">
+                            <p>свежие продукты и контроль производства</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-4.svg" alt="">
+                            <p>Более 1000 положительных отзывов</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-5.svg" alt="">
+                            <p>Экономия до 24 часов в неделю</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-6.svg" alt="">
+                            <p>Идеален для женщин</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-7.svg" alt="">
+                            <p>Лучшая доставка Калининграда</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center choose-us__card_item">
+                            <img src="./images/choose-us-card-8.svg" alt="">
+                            <p>Разнообразное меню: более 140 блюд в месяц</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Choose us end -->
+
+            <!-- Order -->
+            <section class="order">
+                <div class="d-flex flex-column justify-content-center align-items-start main_container">
+                    <h3>закажите домашнюю <br> еду дешевле!</h3>
+                    <h2>МАМА ВАРИТ</h2>
+                    <p>Линейка блюд для тех, кто хочет вкусной домашней <br> еды, приготовленной с любовью!</p>
+                    <a href="#" class="btn_orange">ПОПРОБОВАТЬ</a>
+                    <img src="./images/order-card.png" alt="" class="order__img">
+                </div>
+            </section>
+            <!-- Order end -->
+
+            <!-- FAQ -->
+            <section class="faq">
+                <div class="main_container">
+                    <h2 class="main_title">FAQ</h2>
+                    <ul class="d-flex align-items-stretch faq__card">
+                        <li>
+                            <a href="#" class="active">
+                                <img src="./images/faq-card-1.png" alt="">
+                                <span>ПРОДУКТЫ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/faq-card-2.png" alt="">
+                                <span>ТАРИФЫ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/faq-card-3.png" alt="">
+                                <span>ДОСТАВКА</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/faq-card-4.png" alt="">
+                                <span>ХРАНЕНИЕ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex flex-column faq__questions">
+                        <li class="faq__questions_item">
+                            <h3 class="d-flex align-items-center justify-content-between">
+                                <span>Какое мясо вы используете для готовки блюд?</span>
+                                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 0.999999L15 15L1 0.999999" stroke="#34373A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h3>
+                            <div class="faq__questions_item__body">
+                                <p>Мы используем в нашем питании натуральные фермерские молочные продукты от компании «Залесский фермер» оптимальные по калорийности: молоко — 2,5%, творог — 5%, йогурт — 3,5%.</p>
+                            </div>
+                        </li>
+                        <li class="faq__questions_item">
+                            <h3 class="d-flex align-items-center justify-content-between">
+                                <span>Какие молочные продукты вы используете для готовки блюд?</span>
+                                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 0.999999L15 15L1 0.999999" stroke="#34373A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h3>
+                            <div class="faq__questions_item__body">
+                                <p>Мы используем в нашем питании натуральные фермерские молочные продукты от компании «Залесский фермер» оптимальные по калорийности: молоко — 2,5%, творог — 5%, йогурт — 3,5%.</p>
+                            </div>
+                        </li>
+                        <li class="faq__questions_item">
+                            <h3 class="d-flex align-items-center justify-content-between">
+                                <span>Полезное питание - это вкусно?</span>
+                                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 0.999999L15 15L1 0.999999" stroke="#34373A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h3>
+                            <div class="faq__questions_item__body">
+                                <p>Мы используем в нашем питании натуральные фермерские молочные продукты от компании «Залесский фермер» оптимальные по калорийности: молоко — 2,5%, творог — 5%, йогурт — 3,5%.</p>
+                            </div>
+                        </li>
+                        <li class="faq__questions_item">
+                            <h3 class="d-flex align-items-center justify-content-between">
+                                <span>Нужно ли мне считать КБЖУ и соблюдать диету с Vitameal?</span>
+                                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 0.999999L15 15L1 0.999999" stroke="#34373A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h3>
+                            <div class="faq__questions_item__body">
+                                <p>Мы используем в нашем питании натуральные фермерские молочные продукты от компании «Залесский фермер» оптимальные по калорийности: молоко — 2,5%, творог — 5%, йогурт — 3,5%.</p>
+                            </div>
+                        </li>
+                        <li class="faq__questions_item">
+                            <h3 class="d-flex align-items-center justify-content-between">
+                                <span>Есть ли в вашем меню десерты?</span>
+                                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 0.999999L15 15L1 0.999999" stroke="#34373A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h3>
+                            <div class="faq__questions_item__body">
+                                <p>Мы используем в нашем питании натуральные фермерские молочные продукты от компании «Залесский фермер» оптимальные по калорийности: молоко — 2,5%, творог — 5%, йогурт — 3,5%.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- FAQ end -->
+
+            <!-- Deliver -->
+            <section class="deliver">
+                <div class="main_container">
+                    <h2 class="main_title">МЫ ДОСТАВЛЯЕМ ЕДУ <span>БЕСПЛАТНО ПО <br> КАЛИНИНГРАДУ И ГУРЬЕВСКУ</span></h2>
+                    <div class="d-flex align-items-stretch deliver__content">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac752fec7a0f6964c2b326c2b5c549b3ffb594e0ac0c468de7cebe8ed51314cfb&amp;source=constructor" frameborder="0"></iframe>
+                        <div class="deliver__text">
+                            <h3>Введите адрес</h3>
+                            <h4>Улица, дом, корпус</h4>
+                            <ul class="d-flex flex-column">
+                                <li>
+                                    <span class="alert_green"></span>
+                                    <p>Мы доставляем бесплатно еду по Калининграду и Гурьевску</p>
+                                </li>
+                                <li>
+                                    <span class="alert_orange"></span>
+                                    <p>Доставка осуществляется раз в 2 дня с 09:00 до 11:00 утра или с 19:00 до 22:00вечера</p>
+                                </li>
+                                <li>
+                                    <span class="alert_black"></span>
+                                    <p>Замена адреса вечерней доставки производится до 18:00 текущего дня (в ином случае, при изменении адреса доставки после 18:00 вне района изначально указанного адреса, клиент оплачивает стоимость доставки на другой адрес по тарифу - 20₽/км от изначально указанного адреса)</p>
+                                </li>
+                                <li>
+                                    <span class="alert_green"></span>
+                                    <p>В случае если курьер не смог связаться с клиентом до 22:00, или до 11 утра, ваш оплаченный день доставки сгорает</p>
+                                </li>
+                                <li>
+                                    <span class="alert_orange"></span>
+                                    <p>Доставка в другие города области рассчитывается отдельно, но так же осуществляется. Если вы хотите выбрать другое время доставки или рассчитать стоимость доставки, позвоните нам по телефону</p>
+                                </li>
+                                <li>
+                                    <span class="alert_black"></span>
+                                    <p>Прием заказов на ближайшую доставку осуществляется до 20:00</p>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="tel:+89992553890" class="btn_orange">
+                                    <img src="./images/phone-calling.svg" alt="">
+                                    <span>8 (999) 255-38-90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Deliver end -->
+
+            <!-- Review -->
+            <section class="review">
+                <div class="main_container">
+                    <h2 class="main_title">отзывы</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/review-card-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center swp_btn">
+                        <button class="swp_btn__prev">
+                            <img src="./images/arrow-left.svg" alt="">
+                        </button>
+                        <button class="swp_btn__next">
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
+
+            <!-- Trust -->
+            <section class="trust">
+                <h2 class="main_title">нам <span>доверяют</span></h2>
+                <div class="swiper swp-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swp-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/partner-1-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Trust end -->
+          
             <!-- our_achievements -->
             <section class="our_achievements">
                 <img class="our_achievements_bg" src="./images/our_achievements_bg.png" alt="">
