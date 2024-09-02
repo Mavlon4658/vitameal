@@ -428,6 +428,135 @@ body {
 }
 // Mobile menu end
 
+// Request modal
+.request_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    &__close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+
+        @include media(768) {
+            top: 30px;
+            right: 30px;
+
+            svg {
+                width: 12px;
+                height: auto;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        background: #fff;
+        border-radius: 30px;
+        padding: 50px;
+        width: 718px;
+        text-align: center;
+
+        @include media(768) {
+            width: calc(100vw - 40px);
+            border-radius: 20px;
+            padding: 60px 15px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 21px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            @include media(768) {
+                font-size: 16px;
+                line-height: 11px;
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            max-width: 378px;
+            margin: 0 auto 30px;
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: 400;
+
+            @include media(768) {
+                font-size: 12px;
+                max-width: 250px;
+            }
+        }
+
+        .inputs {
+            gap: 20px;
+            margin-bottom: 60px;
+
+            @include media(768) {
+                gap: 10px;
+                margin-bottom: 40px;
+            }
+
+            input {
+                width: 100%;
+                text-align: center;
+                height: 50px;
+                border: 1.5px solid $color-green;
+                border-radius: 50px;
+                color: $color-black;
+                font-size: 14px;
+                font-weight: 400;
+
+                @include media(768) {
+                    font-size: 12px;
+                }
+
+                &::placeholder {
+                    color: $color-grey;
+                }
+            }
+        }
+
+        .btn_orange {
+            width: 290px;
+            height: 64px;
+            font-size: 20px;
+            font-weight: bold;
+
+            @include media(768) {
+                width: 100%;
+                height: 45px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+    }
+}
+// Request modal end
+
 // Home
 .home {
     position: relative;

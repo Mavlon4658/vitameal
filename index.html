@@ -19,7 +19,7 @@
     <div class="wrapper">
 
         <!-- Header -->
-        <div class="header d-none">
+        <div class="header">
             <div class="main_container d-flex align-items-center justify-content-between">
                 <a href="/" class="header__logo">
                     <svg width="88" height="40" viewBox="0 0 88 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,6 +145,28 @@
         </section>
         <!-- Mobile menu end -->
 
+        <!-- Request modal -->
+        <section class="request_modal">
+            <div class="request_modal__bg"></div>
+            <from class="request_modal__content">
+                <button type="button" class="request_modal__close">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 21L21 1M21 21L1 1" stroke="#878787" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <h2>ЗАКАЗАТЬ ЗВОНОК</h2>
+                <p>Наш специалист свяжется с вами и ответит на все интересующие вопросы</p>
+                <div class="d-flex flex-column flex-md-row align-items-center inputs">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn_orange">ОТПРАВИТЬ</button>
+                </div>
+            </from>
+        </section>
+        <!-- Request modal end -->
+
         <main>
 
             <!-- Home -->
@@ -160,7 +182,7 @@
                                     <h3>калининград</h3>
                                     <div class="d-flex align-items-center justify-content-center btns">
                                         <a href="#" class="btn_orange">Подобрать меню</a>
-                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                        <a href="#" class="btn_lightgreen request_modal__open">заказать вонок</a>
                                     </div>
                                 </div>
                                 <img src="./images/home-card-1.png" alt="" class="home__card_bg">
@@ -173,7 +195,7 @@
                                     <h3 class="text-orange">от 699₽</h3>
                                     <div class="d-flex align-items-center justify-content-center btns">
                                         <a href="#" class="btn_orange">Подобрать меню</a>
-                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                        <a href="#" class="btn_lightgreen request_modal__open">заказать вонок</a>
                                     </div>
                                 </div>
                                 <img src="./images/home-card-2.png" alt="" class="home__card_bg card-2">
@@ -186,7 +208,7 @@
                                     <h3>VITAMEAL</h3>
                                     <div class="d-flex align-items-center justify-content-center btns">
                                         <a href="#" class="btn_orange">Подобрать меню</a>
-                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                        <a href="#" class="btn_lightgreen request_modal__open">заказать вонок</a>
                                     </div>
                                 </div>
                                 <img src="./images/home-card-3.png" alt="" class="home__card_bg card-3">
@@ -199,7 +221,7 @@
                                     <h3 class="text-orange">новое меню</h3>
                                     <div class="d-flex align-items-center justify-content-center btns">
                                         <a href="#" class="btn_orange">Подобрать меню</a>
-                                        <a href="#" class="btn_lightgreen">заказать вонок</a>
+                                        <a href="#" class="btn_lightgreen request_modal__open">заказать вонок</a>
                                     </div>
                                 </div>
                                 <img src="./images/home-card-4.png" alt="" class="home__card_bg card-4">

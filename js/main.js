@@ -111,3 +111,20 @@ moibleMenuClose.onclick = () => {
     mobileMenu.classList.remove('active');
     bodyVisible();
 }
+
+let requestModal = document.querySelector('.request_modal'),
+    requestModalOpen = document.querySelectorAll('.request_modal__open'),
+    requestModalClose = document.querySelector('.request_modal__close');
+
+requestModalOpen.forEach(el => {
+    el.onclick = e => {
+        e.preventDefault();
+        requestModal.classList.add('active');
+        bodyHidden();
+    }
+});
+
+requestModalClose.onclick = () => {
+    requestModal.classList.remove('active');
+    bodyVisible();
+}
