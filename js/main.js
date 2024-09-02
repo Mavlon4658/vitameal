@@ -128,3 +128,20 @@ requestModalClose.onclick = () => {
     requestModal.classList.remove('active');
     bodyVisible();
 }
+
+let calculate = document.querySelector('.calculate_modal'),
+    calculateOpen = document.querySelectorAll('.calculate_modal__open'),
+    calculateClose = document.querySelector('.calculate_modal__close');
+
+calculateOpen.forEach(el => {
+    el.onclick = e => {
+        e.preventDefault();
+        calculate.classList.add('active');
+        bodyHidden();
+    }
+})
+
+calculateClose.onclick = () => {
+    calculate.classList.remove('active');
+    bodyVisible();
+}
