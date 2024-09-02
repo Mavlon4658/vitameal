@@ -1,3 +1,11 @@
+const bodyHidden = () => {
+    document.querySelector('body').style.overflow = 'hidden';
+}
+
+const bodyVisible = () => {
+    document.querySelector('body').style.overflow = 'visible';
+}
+
 let homeSwp = new Swiper('.home .swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -56,6 +64,7 @@ let reviewSwp1 = new Swiper('.trust .swp-1', {
     watchSlidesProgress: true,
     allowTouchMove: false,
 })
+
 let reviewSwp2 = new Swiper('.trust .swp-2', {
     slidesPerView: 'auto',
     spaceBetween: 30,
@@ -69,3 +78,17 @@ let reviewSwp2 = new Swiper('.trust .swp-2', {
     watchSlidesProgress: true,
     allowTouchMove: false,
 })
+
+let bars = document.querySelector('.header__bars'),
+    mobileMenu = document.querySelector('.mobile_menu'),
+    moibleMenuClose = document.querySelector('.mobile_menu__head button');
+
+bars.onclick = () => {
+    mobileMenu.classList.add('active');
+    bodyHidden();
+}
+
+moibleMenuClose.onclick = () => {
+    mobileMenu.classList.remove('active');
+    bodyVisible();
+}
